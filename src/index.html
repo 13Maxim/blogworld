@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog World</title>
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous" />
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwE9A--bnSBLNjEKGCEGKIhYOp3KOVyyM&callback=initMap&libraries=&v=weekly"
+    async>
+    </script>
+  <script>
+    let map
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 40.7396922, lng: -74.0468613 },
+        zoom: 16,
+      })
+    }
+  </script>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container header__container">
+      <nav class="header__nav">
+        <div class="nav__container">
+          <div class="nav__logo-container">
+            <a href="./index.html" class="nav__logo">BlogWorld</a>
+          </div>
+          <div class="menu__container">
+            <ul class="nav__menu">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link" id="home">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#portfolios" class="nav__link">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a href="./blog.html" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Pages</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="text-box">
+        <div class="text-box__container">
+          <h1 class="text-box__heading">
+            Ideas and perspectives you won’t<br />find anywhere else.
+          </h1>
+          <p class="text-box__text">
+            BlogWorld taps into the brains of the world’s most insightful writers, thinkers, and
+            storytellers to bring you the smartest takes on topics that matter. So whatever your
+            interest, you can always find fresh thinking and unique perspectives.
+          </p>
+          <div class="text-box__buttons-container">
+            <button class="text-box__button-explore btn--primary" type="button">Explore</button>
+            <button class="text-box__button-learn-more btn--secondary" type="button">Learn
+              more</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__container">
+      <a class="main__scroll-to-top-btn" href="#home"></a>
+      <section class="about" id="about">
+        <div class="container about__container">
+          <div class="top-box">
+            <h2 class="top-box__heading">
+              About us
+              <span class="top-box__heading--pattern"></span>
+            </h2>
+            <p class="top-box__text">
+              This is who we are - or at least who we strive to be…
+            </p>
+          </div>
+          <div class="bottom-box">
+            <div class="bottom-box__cards-container">
+              <article class="bottom-box__card--green bottom-box__card">
+                <span class="green-card--square"></span>
+                <img src="./assets/img/icons/a-icon-typography.svg" alt="icon"
+                  class="green-card__icon card__icon" />
+                <h4 class="card__text">Typography</h4>
+              </article>
+              <article class="bottom-box__card--blue bottom-box__card">
+                <span class="blue-card--square"></span>
+                <img src="./assets/img/icons/a-icon-iconset.svg" alt="icon"
+                  class="blue-card__icon card__icon" />
+                <h4 class="card__text">Icon set</h4>
+              </article>
+              <article class="bottom-box__card--red bottom-box__card">
+                <span class="red-card--square"></span>
+                <img src="./assets/img/icons/a-icon-accurate.svg" alt="icon"
+                  class="red-card__icon card__icon" />
+                <h4 class="card__text">Accurate</h4>
+              </article>
+            </div>
+            <div class="bottom-box__video-container">
+              <video src="#" poster="./assets/img/about-img.png" class="bottom-box__video"></video>
+              <img src="./assets/img/icons/a-icon-play.svg" class="video__play-icon" alt="icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="latest-posts" id="posts">
+        <div class="container latest-posts__container">
+          <div class="top-box">
+            <h2 class="top-box__heading">
+              Latest posts
+              <span class="top-box__heading--pattern"></span>
+            </h2>
+            <p class="top-box__text">
+              Information is a source of learning. But unless it is
+              organized, processed and available to the right people
+            </p>
+          </div>
+          <div class="post-container">
+            <article class="post-item">
+              <div class="post-item__imagebox">
+                <img src="./assets/img/post-img/img-post-1.png" alt="post-image"
+                  class="post-item__img" />
+              </div>
+              <div class="post-item__textbox">
+                <h3 class="post-item__title">
+                  <a href="#" class="title__link">In the Future We Will All Live in
+                    Star
+                    Wars</a>
+                </h3>
+                <p class="post-item__text">
+                  The thing you’re doing now, reading prose on a screen, is going out of fashion.
+                  The
+                  defining narrative of our online moment concerns the decline of text, and the
+                  exploding reach and power of audio and video…
+                </p>
+                <ul class="post-item__post-info">
+                  <li class="post-info__list-item">20 oct, 2019</li>
+                  <li class="post-info__list-item">
+                    <span class="post-info__list-item--dot"></span>
+                  </li>
+                  <li class="post-info__list-item">10 min read</li>
+                  <li class="post-info__list-item">
+                    <span class="post-info__list-item--dot"></span>
+                  </li>
+                  <li class="post-info__list-item">
+                    <img src="./assets/img/icons/a-icon-comment.svg" alt="comments icon"
+                      class="list-item__icon" />
+                    11
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="post-item">
+              <div class="post-item__imagebox">
+                <img src="./assets/img/post-img/img-post-2.png" alt="post-image"
+                  class="post-item__img" />
+              </div>
+              <div class="post-item__textbox">
+                <h3 class="post-item__title">
+                  <a href="#" class="title__link">Rubik’s Cube? No, Robotics and AI
+                    are…</a>
+                </h3>
+                <p class="post-item__text">
+                  In other words, I will try to de-hype the crowd about the recent development in
+                  robotics. Concretely, OpenAI has claimed some pretty amazing results with learning
+                  to solve the Rubik’s cube with a robotic hand…
+                </p>
+                <ul class="post-item__post-info">
+                  <li class="post-info__list-item">11 oct, 2019</li>
+                  <li class="post-info__list-item"><span class="post-info__list-item--dot"></span>
+                  </li>
+                  <li class="post-info__list-item">7 min read</li>
+                  <li class="post-info__list-item"><span class="post-info__list-item--dot"></span>
+                  </li>
+                  <li class="post-info__list-item">
+                    <img src="./assets/img/icons/a-icon-comment.svg" alt="comments icon"
+                      class="list-item__icon" />
+                    19
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="post-item">
+              <div class="post-item__imagebox">
+                <img src="./assets/img/post-img/img-post-3.png" alt="post-image"
+                  class="post-item__img" />
+              </div>
+              <div class="post-item__textbox">
+                <h3 class="post-item__title">
+                  <a href="#" class="title__link">How the Internet of Things will
+                    Transfo…</a>
+                </h3>
+                <p class="post-item__text">
+                  The Internet of Things (IoT) promises to be the most important technological
+                  development for consumers since the advent of the smartphone. Experts believe that
+                  this collection of internet-connected technolog…
+                </p>
+                <ul class="post-item__post-info">
+                  <li class="post-info__list-item">28 sep, 2019</li>
+                  <li class="post-info__list-item"><span class="post-info__list-item--dot"></span>
+                  </li>
+                  <li class="post-info__list-item">16 min read</li>
+                  <li class="post-info__list-item"><span class="post-info__list-item--dot"></span>
+                  </li>
+                  <li class="post-info__list-item">
+                    <img src="./assets/img/icons/a-icon-comment.svg" alt="comments icon"
+                      class="list-item__icon" />41
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="portfolios" id="portfolios">
+        <div class="container portfolios__container">
+          <div class="top-box">
+            <h2 class="top-box__heading">
+              Latest portfolio
+              <span class="top-box__heading--pattern"></span>
+            </h2>
+            <p class="top-box__text">
+              Put there articles successfully special warrant submit agree what along then
+            </p>
+          </div>
+          <div class="portfolios-slider">
+            <div class="portfolios-slider__show-window">
+              <div class="portfolios-slider__slides-container"
+                id="portfolios-slider__slides-container">
+                <div class="portfolios-slider__slide-item portfolios-slider__slide-item--ocean">
+                  <h3 class="slide-item__title">Art Ocean</h3>
+                  <p class="slide-item__subtitle">Photography, art, nature</p>
+                  <div class="slide-item__control-btns">
+                    <button class="slide-item__copy-btn">
+                    </button>
+                    <button class="slide-item__scale-btn">
+                    </button>
+                  </div>
+                </div>
+                <div class="portfolios-slider__slide-item portfolios-slider__slide-item--city">
+                  <h3 class="slide-item__title">City guide</h3>
+                  <p class="slide-item__subtitle">Photography, city, way</p>
+                  <div class="slide-item__control-btns">
+                    <button class="slide-item__copy-btn">
+                    </button>
+                    <button class="slide-item__scale-btn">
+                    </button>
+                  </div>
+                </div>
+                <div class="portfolios-slider__slide-item portfolios-slider__slide-item--mountains">
+                  <h3 class="slide-item__title">Mountains</h3>
+                  <p class="slide-item__subtitle">Art, hiking</p>
+                  <div class="slide-item__control-btns">
+                    <button class="slide-item__copy-btn">
+                    </button>
+                    <button class="slide-item__scale-btn">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btns-container">
+              <div class="slider-btns">
+                <button class="portfolios-slider__slider-btn--prev slider-btn--prev"
+                  id="portfolios-slider__slider-btn--prev">
+                </button>
+                <button class="portfolios-slider__slider-btn--next slider-btn--next"
+                  id="portfolios-slider__slider-btn--next">
+                </button>
+              </div>
+              <div class="portfolios-slider__see-works-btn-container">
+                <button class="portfolios-slider__see-works-btn btn--secondary">See all
+                  works</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials" id="testimonials">
+        <div class="container testimonials__container">
+          <div class="top-box">
+            <h2 class="top-box__heading">
+              Testimonials
+              <span class="top-box__heading--pattern"></span>
+            </h2>
+          </div>
+          <div class="testimonials-slider">
+            <div class="testimonials-slider__btn--prev-container">
+              <button class="testimonials-slider__btn--prev slider-btn--prev"
+                id="testimonials-slider__btn--prev">
+              </button>
+            </div>
+            <div class="testimonials-slider__show-window">
+              <div class="testimonials-slider__slides-container"
+                id="testimonials-slider__slides-container">
+                <div class="testimonials-slider__slide-item">
+                  <div class="slide-item__text-box">
+                    <figure class="text-box__quote-figure">
+                      <blockquote class="text-box__quote">
+                        We move at a fast pace. I’m always working on something. I am excited about
+                        it!
+                      </blockquote>
+                      <figcaption class="text-box__quote-owner">
+                        <span class="quote-owner__name">Martin Oda</span><br />
+                        <span class="quote-owner__profession">Product designer</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="slide-item__img-box">
+                    <img src="./assets/img/user-big.png" class="img-box__user-img"
+                      alt="user photo" />
+                  </div>
+                </div>
+                <div class="testimonials-slider__slide-item">
+                  <div class="slide-item__text-box">
+                    <figure class="text-box__quote-figure">
+                      <blockquote class="text-box__quote">
+                        We’re just enthusiastic about what we do.
+                      </blockquote>
+                      <figcaption class="text-box__quote-owner">
+                        <span class="quote-owner__name">Steve Jobs</span><br />
+                        <span class="quote-owner__profession">Apple company finder</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="slide-item__img-box">
+                    <img src="./assets/img/steve-jobs.jpg" class="img-box__user-img"
+                      alt="user photo" />
+                  </div>
+                </div>
+                <div class="testimonials-slider__slide-item">
+                  <div class="slide-item__text-box">
+                    <figure class="text-box__quote-figure">
+                      <blockquote class="text-box__quote">
+                        And today, tomorrow, not everyone can watch. Or rather, not only everyone
+                        can
+                        watch, very few people can do it.
+                      </blockquote>
+                      <figcaption class="text-box__quote-owner">
+                        <span class="quote-owner__name">Vitali Klitschko</span><br />
+                        <span class="quote-owner__profession">Mayor of Kiev</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="slide-item__img-box">
+                    <img src="./assets/img/vitaliy_klichko.jpg" class="img-box__user-img"
+                      alt="user photo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-slider__btn--next-container">
+              <button class="testimonials-slider__btn--next slider-btn--next"
+                id="testimonials-slider__btn--next">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container section-top">
+          <div class="top-box">
+            <h2 class="top-box__heading">
+              Contact us
+              <span class="top-box__heading--pattern"></span>
+            </h2>
+            <p class="top-box__text">
+              Put there articles successfully special warrant submit agree what along then
+            </p>
+          </div>
+          <div class="links-bar">
+            <div class="links-container">
+              <a href="#" class="links-bar__link">
+                <img src="./assets/img/icons/a-icon-facebook.svg" alt="icon" />
+              </a>
+              <a href="#" class="links-bar__link">
+                <img src="./assets/img/icons/a-icon-instagram.svg" alt="icon" />
+              </a>
+              <a href="#" class="links-bar__link">
+                <img src="./assets/img/icons/a-icon-dribbble.svg" alt="icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section-bottom section--gray">
+          <div class="container section-bottom__container">
+            <div class="content-box">
+              <div class="details">
+                <h2 class="details__heading">What will be next step?</h2>
+                <ol class="details-list">
+                  <li class="details-list__list-item">
+                    <span class="details-list__list-item--circle"></span>
+                    <h4 class="list-item__heading">We’ll prepare a proposal</h4>
+                    Required scope, timeline and apr. price will be included if you provide us with
+                    detail information about a project.
+                  </li>
+                  <li class="details-list__list-item">
+                    <span class="details-list__list-item--circle"></span>
+                    <h4 class="list-item__heading">Together we discuss it</h4>
+                    Let’s get acquainted and discuss all the possible variant and options. Google
+                    Hangouts or Skype usually wirks great.
+                  </li>
+                  <li class="details-list__list-item">
+                    <span class="details-list__list-item--circle"></span>
+                    <h4 class="list-item__heading">Let’s start building</h4>
+                    When the contract is signed and all goals are set we can start the first sprint.
+                  </li>
+                </ol>
+              </div>
+              <div class="form-box">
+                <div class="top-bar">
+                  <img src="./assets/img/icons/a-icon-mail.svg" class="top-bar__icon" alt="icon" />
+                  <p class="top-bar__text">
+                    Write us a few words about your project and we will prepare proposal for you
+                    within <strong>24 hours</strong>
+                  </p>
+                </div>
+                <div class="form-container">
+                  <form action="#" class="contact__form">
+                    <label class="form__label" for="input-name">
+                      Your name
+                    </label>
+                    <input type="text" class="form__input" id="input-name" />
+                    <label class="form__label" for="input-email">
+                      Email
+                    </label>
+                    <input type="email" class="form__input" id="input-email" />
+                    <div class="form__container-label--pass">
+                      <label class="form__label" for="input-password">
+                        Password
+                      </label>
+                      <button class="form__showpass-btn" type="button">
+                        <img src="./assets/img/icons/a-icon-showpass.svg" alt="icon" />
+                        show
+                      </button>
+                    </div>
+                    <input type="password" class="form__input" id="input-password" />
+                    <button type="submit" class="form__send-btn btn--primary">Send message</button>
+                    <p class="form__form-contact-text">
+                      If you need to have a DNA first, just contact us at
+                      <a href="mailto:email@gmail.com" class="form-contact-text__email">
+                        email@gmail.com
+                      </a>
+                    </p>
+                  </form>
+                  <div class="contact__map-container">
+                    <div class="contact__map" id="map"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer section--gray">
+    <div class="container footer__container">
+      <div class="wrapper">
+        <div class="links-container">
+          <a href="https://facebook.com" class="footer__link" target="_blanc">
+            <img src="./assets/img/icons/a-icon-facebook.svg" class="link__icon" alt="link icon" />
+          </a>
+          <a href="https://instagram.com" class="footer__link" target="_blanc">
+            <img src="./assets/img/icons/a-icon-instagram.svg" class="link__icon" alt="link icon" />
+          </a>
+          <a href="https://dribbble.com" class="footer__link" target="_blanc">
+            <img src="./assets/img/icons/a-icon-dribbble.svg" class="link__icon" alt="link icon" />
+          </a>
+        </div>
+        <div class="logo-container">
+          <a href="#header" class="footer__logo">BlogWorld</a>
+        </div>
+        <div class="copyright">
+          <p class="footer__copyright-text">
+            &copy;2021 All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+@import "./bootstrap-scss/mixins/";
+@import "fonts";
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+  @include body-start-config;
+}
+
+.container {
+  @include container;
+}
+
+.header {
+  &__container {
+    padding-top: 28px;
+
+    @media (max-width: 500px) {
+      padding-top: 10px;
+    }
+  }
+
+  &__nav {
+    @include header-nav;
+  }
+}
+
+.top-box {
+  @include main-topbox;
+  margin-bottom: 20px;
+
+  &__heading {
+    &--pattern {
+      @include heading-pattern;
+    }
+  }
+}
+
+.spinner {
+  @include spinner();
+}
+
+.main-loading {
+  .spinner {
+    visibility: visible !important;
+  }
+
+  .main__container {
+    display: none !important;
+  }
+}
+
+.main {
+  .container {
+    padding-bottom: 80px;
+  }
+ 
+  .authors {
+    @include make-row($gutter);
+
+    .authors-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+  
+      list-style: none;
+  
+      &__list-item {
+        cursor: pointer;
+        
+        &--active,
+        &:hover {
+          text-decoration: underline;
+          text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+        }
+      }
+    }
+  
+    .post-names-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+  
+      list-style: none;
+  
+      &__list-item {
+        color: rgb(53, 88, 202);
+        cursor: pointer;
+  
+        &--active,
+        &:hover {
+          text-decoration: underline;  
+        }
+      }
+    }
+
+    &__main {
+      @include make-col(10, 12);
+      padding-top: 10px;
+
+      .authors-list {
+        justify-content: center;
+
+        &__list-item {
+          position: relative;
+
+          &:not(&:last-child) {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .post-names-list {
+        &__list-item {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    &__aside {
+      @include make-col(2, 12);
+      padding: 10px 7px;
+
+      border: 1px solid rgb(83, 83, 83);
+      background-color: $section-gray-bg;
+
+      .authors-list {
+        flex-direction: column;
+      }
+
+      .post-names-list {
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding-left: 10px;
+      }
+    }
+
+    &__post-text {
+      margin: 10px auto;
+      padding-right: 20px;
+
+      line-height: 1.7;
+    }
+  }
+}
+
+.footer {
+  @include footer;
+}

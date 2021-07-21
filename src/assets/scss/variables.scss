@@ -1,0 +1,49 @@
+$gutter: 40px;
+$top-text-size: 17px;
+$top-text-line-height: 26px;
+$section-padding-top: 86px;
+$bottom-container-margin-top: 60px !default;
+$post-text-size: 15px;
+$post-line-height: 24px;
+$testimonials-font-size: 17px;
+$testimonials-line-height: 26px;
+
+@media (max-width: 850px) {
+  $bottom-container-margin-top: 30px;
+}
+
+$section-gray-bg: #f8f8f8;
+$gray-border-color: #ddd;
+$footer-copyright-color: #333;
+$post-info-color: #818181;
+$logo-color: #4d4c49;
+$font-color-primary: #4d4949;
+$btn-hover-bg: #393737;
+$btn-hover-color: #fff;
+$green-card-bg: linear-gradient(108.56deg, #d6d385 0%, #b5d595 100%);
+$blue-card-bg: linear-gradient(108.56deg, #bed4fd 0%, #96b8fd 100%);
+$red-card-bg: linear-gradient(108.56deg, #ff7d7d 0%, #ffa6a6 100%);
+$post-item-right-box-bg: #fcf6f6;
+
+$fonts: (
+  _regular: "Hind Siliguri",
+  _medium: "Hind Siliguri Medium",
+  _bold: "Hind Siliguri Bold",
+  _semiBold: "Hind Siliguri SemiBold",
+  _light: "Hind Siliguri Light",
+);
+
+$primary-btn: (
+  _bg: #4d4c49,
+  _color: #fff,
+  _disabled-bg: #4d4c49,
+  _disabled-color: #fff,
+);
+
+$secondary-btn: (
+  _bg: transparent,
+  _border: 1px solid #4d4949,
+  _color: $font-color-primary,
+  _disabled-color: rgba(77, 73, 73, 0.4),
+  _disabled-bg: #fff,
+);

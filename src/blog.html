@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous" 
+  />
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="header__container container">
+      <nav class="header__nav">
+        <div class="nav__container">
+          <div class="nav__logo-container">
+            <a href="./index.html" class="nav__logo">BlogWorld</a>
+          </div>
+          <div class="menu__container">
+            <ul class="nav__menu">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link" id="home">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#portfolios" class="nav__link">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a href="./blog.html" class="nav__link nav__link--active">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Pages</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main" id="main">
+
+    <!-- spinner -->
+    <div class="spinner" id="spinner">
+      <div class="spinner__container">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="main__container">
+      <a class="main__scroll-to-top-btn" href="#header" id="modal-open"></a>
+      <section class="blog">
+        <div class="blog__container container">
+          <div class="top-box">
+            <h2 class="top-box__heading">
+              Blog
+              <span class="top-box__heading--pattern"></span>
+            </h2>
+          </div>
+          <div class="posts-section">
+            <form class="search" id="search-form">
+              <input 
+                type="text" 
+                class="search__input" 
+                list="search__list" 
+                id="search__input" 
+                autocomplete="off"
+                placeholder="Search by author or title"
+              />
+              <button class="search__button" id="search__button" type="submit"></button>
+              <datalist id="search__list"></datalist>
+              <div class="search__message" id="search-message" hidden></div>
+            </form>
+            <div class="posts-container" id="posts-container"></div>
+            <div class="btn-read-more-container">
+              <button class="post-section__btn-read-more btn--primary"
+                id="post-section__btn-read-more">Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer section--gray">
+    <div class="container footer__container">
+      <div class="wrapper">
+        <div class="links-container">
+          <a href="https://facebook.com" class="footer__link" target="_blanc">
+            <img src="./assets/img/icons/a-icon-facebook.svg" class="link__icon" alt="link icon" />
+          </a>
+          <a href="https://instagram.com" class="footer__link" target="_blanc">
+            <img src="./assets/img/icons/a-icon-instagram.svg" class="link__icon" alt="link icon" />
+          </a>
+          <a href="https://dribbble.com" class="footer__link" target="_blanc">
+            <img src="./assets/img/icons/a-icon-dribbble.svg" class="link__icon" alt="link icon" />
+          </a>
+        </div>
+        <div class="logo-container">
+          <a href="#header" class="footer__logo">BlogWorld</a>
+        </div>
+        <div class="copyright">
+          <p class="footer__copyright-text">
+            &copy;2021 All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
